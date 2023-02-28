@@ -2,9 +2,56 @@
 <html lang="kr">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>동아리 신청</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 <body>
-    
+    <div class="modal-wrap display-none">
+        <div class="modal">
+            <img src="" alt="">
+            <p>신청제출되었습니다</p>
+            <button class="btn modal-close">닫기</button>
+        </div>
+    </div>
+
+    <section class="contact-us">
+        <div class="container">
+            <h2>동아리 신청</h2>
+            <p>동아리 신청이 끝난 후 모든 개인정보는 파기됩니다. 동아리 신청 취소를 원하시면 아래 인스타그램을 통해 DM문의 부탁드립니다.</p>
+            <form class="contact-us">
+                <div class="flex-row">
+                    <input type="search" class="full-name" placeholder="이름">
+                    <input type="search" class="email-adress" placeholder="전화번호">
+                </div>
+                <input type="search" class="subject" placeholder="학번">
+                <textarea class="message" placeholder="Message"></textarea>
+                <button class="btn" type="submit">제출</button>
+            </form>
+        </div>
+    </section>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCRK7l9YU7CbX7oVFbRyto0uyguFyzQ5Ow",
+          authDomain: "club-sing-list.firebaseapp.com",
+          projectId: "club-sing-list",
+          storageBucket: "club-sing-list.appspot.com",
+          messagingSenderId: "148655864772",
+          appId: "1:148655864772:web:e226bf6a942c2cf4f94291"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      <script src="firebase.js"></script>
+      <script src="main.js"></script>
 </body>
 </html>
