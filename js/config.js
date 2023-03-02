@@ -6,17 +6,15 @@
  */
 var app = angular.module("myApp.config", []);
 
-// your Firebase URL goes here
-var config = {
-    apiKey: "AIzaSyAVCmE0CaAntEeB7p3Up9L990FGHnO11_E",
-    authDomain: "angularfire-survey.firebaseapp.com",
-    databaseURL: "https://angularfire-survey.firebaseio.com",
-    storageBucket: "angularfire-survey.appspot.com",
-    messagingSenderId: "204946184892"
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCkz9BW1wPvIkQDFFFGuj6dDxIeVA7I-uo",
+  authDomain: "club-list-87d47.firebaseapp.com",
+  projectId: "club-list-87d47",
+  storageBucket: "club-list-87d47.appspot.com",
+  messagingSenderId: "1026274058430",
+  appId: "1:1026274058430:web:eaf42f260b1ce152727eef"
 };
-firebase.initializeApp(config);
 
-// double-check whether the app has been configured
-if (config.authDomain === "angularfire-survey.firebaseapp.com") {
-    angular.element(document.body).html("<h1>Please configure app/js/config.js before running!</h1>");
-}
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
