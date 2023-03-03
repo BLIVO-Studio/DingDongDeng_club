@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap' );
+html{
+  display: block;
+}
+head{
+  display: none;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo_area{
+  height: 40px;
+  background-color: #222425;
+  padding: 20px;
+}
+.main_logo{
+  height: 20px;
+  padding: 10px;
+  line-height: 50%;
+}
+/*logo menu*/
+.logo_menu{
+  float: center;
+  padding: 5px;
+  left: calc(50% - 600px/2);
+}
+.logo_menu a:hover, :active{
+  color: #ffa900;
+}
+
+.menu_1{text-decoration: none; padding: 10px;  color: white;} .menu_2{text-decoration: none;padding: 10px;  color: white;}
+
+.sing_up{ 
+  position:absolute; left: 35%;
+}
+
+/*slid img*/
+#slideShow {   
+  clear:both;   /* 플로팅 해제 */
+  width:100%;    /* 너비 */ 
+  height:50vw;   /* 높이 */ 
+  overflow:hidden;   /* 영역 넘치면 감춤 */ 
+  position: relative;
+}
+#slides {
+  position: absolute;
+}
+#slides > img {
+  width:100%;  /* 너비 */
+  float:left;  /* 가로로 배치 */
+  transition: all 2s ease;
+}
+/*slid img*/
+
+/*wrap*/
+.wrap{
+  padding: 5%;
+}
+
+.start{
+  width: 100px;
+}
+
+/*announce*/
+.announce{
+  width: 100%; height: 701px;
+  background-color: #222425;
+  color: white;
+}
+.information{
+  padding-left: 5%;
+}
+.sns_link{
+  text-decoration: none;
+}
+.sns_img{
+  width: 25px;
+  float: right;
+  padding-right: 5%;
+}
+
+/*footer*/
+.footer{
+  height: 60px;
+  background-color: #222425;
+  padding-left: 5%;
+  font-size: 12px;
+}
+.b_text_first{
+  text-decoration: none;
+  color: #e4e8eb;
+  float: left;
+}
+.b_text{
+  text-decoration: none;
+  color: #e4e8eb;
+  float: left;
+}
+.info_footer{
+  list-style: none;
+}
+
+.bottom_text_link ::before{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 8px;
+  background-color: #a8b0bf;
+  vertical-align: -1px;
+}
+
+
+/*500under size*/
+@media only screen and (max-device-width: 500px){
+  html{
+    display: block;
+  }
+  head{
+    display: none;
+  }
+  body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .logo_area{
+    height: 40px;
+    background-color: #222425;
+  }
+  .main_logo{
+    height: 20px;
+    padding: 10px;
+    line-height: 50%;
+  }
+  /*logo menu*/
+  .logo_menu{
+    float: right;
+    padding: 5px;
+  }
+  .logo_menu a:hover, :active{
+    color: #ffa900;
+  }
+  
+  .menu_1{text-decoration: none; padding: 10px;  color: white;} .menu_2{text-decoration: none;padding: 10px;  color: white;}
+  /*wrap*/
+  .wrap{
+    padding: 5%;
+  }
+  /*slid img*/
+  
+  /*slid img*/
+  .start{
+    width: 100px;
+  }
+  /*info*/
+  /*info box*/
+  .banner_info{
+    display: flex;
+    text-align:center;
+  }
+  
+  .info_box_1{
+    background-color: #222425;
+    width: 20%;
+    height: 60%;
+    margin: 20px;
+  }
+  .info_box_2{
+    background-color: #222425;
+    width: 20%;
+    height: 60%;
+    margin: 20px;
+  }
+  .info_box_3{
+    background-color: #222425;
+    width: 20%;
+    height: 60%;
+    margin: 20px;
+  }
+  .info_box_4{
+    background-color: #222425;
+    width: 20%;
+    height: 60%;
+    margin: 20px;
+  }
+  .info_box_5{
+    background-color: #222425;
+    width: 20%;
+    height: 60%;
+    margin: 20px;
+  }
+  .info_img{
+    width: 100%;
+  }
+  .info_box_text{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  /*announce*/
+  .announce{
+    width: 100%; height: 100px;
+    background-color: #222425;
+    color: white;
+  }
+  .information{
+    padding-left: 5%;
+  }
+  .sns_link{
+    text-decoration: none;
+  }
+  .sns_img{
+    width: 25px;
+    float: right;
+    padding-right: 5%;
+  }
+  
+  /*footer*/
+  .footer{
+    height: 60px;
+    background-color: #222425;
+    padding-left: 5%;
+    font-size: 12px;
+  }
+  .b_text_first{
+    text-decoration: none;
+    color: #e4e8eb;
+    float: left;
+  }
+  .b_text{
+    text-decoration: none;
+    color: #e4e8eb;
+    float: left;
+  }
+  .info_footer{
+    list-style: none;
+  }
+  
+  .bottom_text_link ::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #a8b0bf;
+    vertical-align: -1px;
+  }  
+}
