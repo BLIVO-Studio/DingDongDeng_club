@@ -28,6 +28,11 @@ body{
 .logo_menu a:hover, :active{
   color: #ffa900;
 }
+.info_club{
+  text-align: center;
+  position: relative;
+  color: #222425;
+}
 
 .sing_up{ 
   position:absolute; left: 35%;
@@ -56,6 +61,7 @@ body{
 /*wrap*/
 .wrap{
   padding: 5%;
+  text-align: center;
 }
 
 .start{
@@ -149,6 +155,7 @@ body{
   /*wrap*/
   .wrap{
     padding: 5%;
+    text-align: center;
   }
   /*slid img*/
   
@@ -220,6 +227,9 @@ body{
     width: 25px;
     float: right;
     padding-right: 5%;
+  }
+  .info_club{
+    text-align: center;
   }
   
   /*footer*/
