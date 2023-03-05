@@ -20,6 +20,14 @@ body{
   padding: 10px;
   line-height: 50%;
 }
+.information{
+  padding-right: 5%;
+}
+.qrcode{
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+}
 /*logo menu*/
 .logo_menu{
   float: right;
